@@ -32,6 +32,7 @@ SYNC FLOW:
 """
 
 import logging
+import sys
 from typing import List, Dict, Optional, Tuple, Set
 from datetime import datetime
 
@@ -244,7 +245,8 @@ class SyncEngine:
             logger.info(str(self.stats))
             logger.info("=" * 60)
 
-            print("\n" + self.summary.generate_report(detailed=True))
+            report = self.summary.generate_report(detailed=True)
+            print("\n" + report.encode(sys.stdout.encoding or "utf-8", errors="replace").decode(sys.stdout.encoding or "utf-8"))
 
             if not settings.dry_run:
                 self.summary.save_to_file("sync_report.txt")

@@ -25,6 +25,15 @@ venv/
 env/
 ENV/
 .venv
+Scripts/
+pyvenv.cfg
+Lib/
+
+# Runtime data
+backups/
+sync_state.json
+sync_state_backup_*.json
+sync_report.txt
 
 # Environment variables
 .env
