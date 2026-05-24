@@ -1,0 +1,13 @@
+{
+  "snapshot_id": "20260423_144039",
+  "created_at": "2026-04-23T14:40:48.437674",
+  "snapshot_type": "manual",
+  "todoist_task_count": 20,
+  "todoist_subtask_count": 10,
+  "notion_task_count": 24,
+  "notion_subtask_count": 13,
+  "sync_state_entries": 59,
+  "last_sync_time": null,
+  "is_valid": true,
+  "notes": ""
+}
